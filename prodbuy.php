@@ -60,10 +60,8 @@ echo "<p>Number to be purchased: ";
 //create form made of one text field and one button for user to enter quantity
 //the value entered in the form will be posted to the basket.php to be processed
 echo "<select name=p_quantity>";
-$prodQuantity = prodQuantity;
-while ($prodQuantity == prodQuantity) {
-    echo "<option value=$prodQuantity> </option>";
-    $prodQuantity++;
+for ($i = 1; $i<24;$i++) {
+    echo "<option value=".$i.">$i</option>";
 }
 echo "</select>";
 echo "<input type=submit name='submitbtn' value='ADD TO BASKET' id='submitbtn'>";
