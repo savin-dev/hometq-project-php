@@ -38,6 +38,7 @@ while ($arrayp=mysqli_fetch_array($exeSQL))
     echo "</tr>";
     echo "<td style='border: 0px'>";
     echo "<p>".$arrayp['prodPrice']."</p>";
+    echo "</a>";
     echo "</td>";
     echo "</tr>";
 }
